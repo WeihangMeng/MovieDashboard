@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie DataBase</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
+    <link
+     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet"
+   />
+   <link
+     href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+     rel="stylesheet"
+   />
+</head>
+
+<body>
+  <main>
+    <header>
+      <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"width="100"height="100">
+      <button class="button"id="allMovie">ALL Movie</button>
+      <button class="button"id="likeList">Liked List</button>
+    </header>
+    <div class="dropdown">
+      <button class="dropbtn">Popular</button>
+      <div class="dropdown-content">
+        <button href="#"class="now-playing">Now Playing</button>
+        <button href="#"class="popular">Popular</button>
+        <button href="#"class="top-rated">Top Rated</button>
+        <button href="#"class="upcoming">Upcoming</button>
+      </div>
+    </div>
+    <div class="page-container">
+      <button id="prevPage">
+        prev
+      </button>
+      <p id="currentPage">1/500</p>
+      <button id="nextPage">
+        next
+      </button>
+    </div>
+  </main>
+
+<div class="container">
+  <!-- <div class=""id="">
+    <img class="movie-poster"src="https://image.tmdb.org/t/p/w500/${movie.moviePosterLink}">
+    <div class="movie-name">
+      <span>${movie.movieName}</span>
+    </div>
+    <div class="movie-rating">
+      <p class="rating"style="color:black"><span class="rating-icon"style="color:yellow">&#9733;</span>${movie.movieRating}</p>
+    </div>
+    <div class="like-icon icon${
+        liked ? "ion-md-heart" : "ion-md-heart-empty"
+      }"></i>">
+    </div>
+     -->
+
+
+</div>
+<div id="promote">
+  <div class="promote-container">
+    <div class="close">
+      <i class="icon ion-md-close"></i>
+    </div>
+    <div class="promote-content">
+      <!-- <div class="movie-poster">
+        <img src = "${imgLink}/${movieData.poster_path}">
+      </div>
+      <div class="movie-detail">
+        <h2>${movieData.title}</h2>
+        <br />
+        <h3>Overview</h3>
+        <p class="movie-overview">
+        ${movie.Data.overview}
+        </p>
+        <h3>Genre</h3>
+        <div class="genre-container">
+          ${movieData.genres.map((item) => {
+            return `<div class="genre-item">${item}</div>`;
+          })}
+        </div>
+        <h3>Rating</h3>
+        <p>${movieData.vote_average}</p>
+        <h3>Production Company</h3>
+        <div class="production-container">
+          ${movieData.production_companies.map((item) => {
+            return `
+               <div class="production-item">
+                 <img src="${imgLink}/${company.logo_path}">
+                </div>`;
+          })}
+
+    `; -->
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+
+
+</html>
